@@ -1,0 +1,196 @@
+@media (max-width: 1300px) {
+    nav .container .logo {
+        width: 20%;
+    }
+    nav .container .links ul {
+        position: absolute;
+        background-color: var(--second-color);
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        width: 80%;
+        height: 0px;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 5px;
+        transition-duration: 1s;
+        column-gap: 0px;
+        row-gap: 20px;
+        overflow: hidden;
+
+    }
+    nav .container .burger:focus + ul {
+        height: 255.2px;
+        padding: 20px 0;
+    }
+    nav .container .burger {
+        width: 50px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid var(--main-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    nav .container .burger span {
+        display: block;
+        width: 75%;
+        height: 2px;
+        background-color: var(--main-color);
+    }
+    #About .container {
+        flex-wrap: wrap;
+    }
+    #About .container .part {
+        width: 100%;
+    }
+    #About .container .part1 {
+        margin-bottom: 50px;
+    }
+    #About .container .part1 .frame {
+        width: 280px;
+    }
+    #About .container .part2 .info .col {
+        flex-basis: 100%;
+    }
+    #About .container .part2 .buttons button {
+        padding: 10px 20px ;
+        font-size: 15px;
+    }
+    #Services .content .box {
+        width: 100%;
+        padding: 0 10px;
+    }
+    #Services .content .box .item {
+        padding: 20px;
+    }
+    #Services .content .box:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    #portfolio .content .box {
+    width: 100%;
+}
+    #portfolio .content .box .item {
+     font-size: 12px;
+}
+#Blog .content .box {
+    width: 100%;
+}
+#Blog .content .box:not(:last-child) {
+    margin-bottom: 20px;
+}
+#Blog .content .box .item {
+    width: 280px;
+}
+#ContactUs form .box:nth-of-type(1),
+#ContactUs form .box:nth-of-type(2) {
+    width: 100%;
+} 
+#ContactUs form .box:nth-of-type(1) .item,
+#ContactUs form .box:nth-of-type(2) .item {
+    margin: 0;
+}
+#ContactUs form button {
+   width: 100%;
+}
+    footer {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    /* header .content h4 {
+    font-size: 25px;
+}
+header .content h1 {
+    font-size: 80px;
+}
+header .content p {
+    font-size: 20px;
+} */
+  nav .container .logo {
+        width: 16%;
+    }
+    #Services .content .box .item {
+        width: 280px;
+        margin: auto;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+     nav .container .logo {
+        width: 10%;
+    }
+    #About .container .part2 .info .col {
+        flex-basis: 50%;
+    }
+    #Services .content .box {
+        width: 50%;
+        /* padding: 15px; */
+    }
+    #Services .content .box .item {
+        padding: 20px;
+    }
+    #portfolio .content .box {
+        width: 50%;
+    }
+    #Blog .content .box {
+    width: 50%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+     nav .container .logo {
+        width: 8%;
+    }
+    #About .container .part {
+        width: 50%;
+        /* padding: 0px 80px; */
+    }
+    #About .container .part2 .info .col h5 {
+        font-size: 12px;
+    }
+    #About .container .part2 .info .col p {
+        font-size: 12px;
+    }
+     #Services .content .box .item {
+        width: 280px;
+        margin: auto;
+     }
+     #ContactUs form .box:nth-of-type(1),
+    #ContactUs form .box:nth-of-type(2) {
+    width: 50%;
+} 
+    #ContactUs form .box:nth-of-type(1) .item {
+        margin-right: 5px;
+    }
+    #ContactUs form .box:nth-of-type(2) .item {
+    margin-left: 5px;
+}
+     
+
+@media (min-width: 992px) and (max-width: 1300px) {
+     nav .container .logo {
+        width: 6%;
+    }
+     #Services .content .box {
+        width: 25%;
+     }
+      #Services .content .box .item {
+        width: 100%;
+      }
+      #portfolio .content .box {
+        width: 33.33%;
+     }
+       #Blog .content .box {
+        width: 33.33%;
+    }
+}
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+
+}
+}

@@ -1,0 +1,509 @@
+nav {
+    background-color: var(--second-color);
+    padding: 2px 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .logo {
+   width: 6%;
+}
+nav .container .logo img {
+    width: 100%;
+}
+nav .container .burger {
+    display: none;
+}
+nav .container .links ul {
+    display: flex;
+    list-style: none;
+    column-gap: 15px;
+}
+nav .container .links ul li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+    position: relative;
+    transition-duration: .5s;
+}
+nav .container .links ul li.active a,
+nav .container .links ul li:hover a {
+    color: var(--main-color);
+}
+nav .container .links ul li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%);
+    transition-duration: .5s;
+}
+nav .container .links ul li:hover a::after,
+nav .container .links ul li.active a::after {
+    width: 100%;
+}
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/slider-01-cd8154e4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    position: absolute;
+}
+header .content {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+header .content h4 {
+    /* font-size: 30px; */
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+header .content h1 {
+    /* font-size: 80px; */
+    font-size: clamp(3rem ,6vw ,5rem);
+    margin: 20px 0px;
+    color: var(--main-color);
+}
+header .content p {
+    /* font-size: 20px; */
+    font-size: clamp(.8rem ,2vw ,1.5rem);
+
+}
+header .content p::after {
+    content: "Designer";
+    animation-name: animate_2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+header a.shape {
+    width: 30px;
+    height: 60px;
+    border: 3px solid var(--main-color);
+    border-radius: 15px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+header a.shape::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: -25%;
+    left: 50%;
+     transform: translate(-50%);
+     animation-name: animate_1;
+     animation-duration: 1.5s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+
+}
+#About {
+    background-color: var(--bg-color);
+}
+#About .container {
+    display: flex;
+    padding: 20px 0px;
+}
+#About .container .part {
+    width: 50%;
+}
+#About .container .part1 .frame {
+    background-color: transparent;
+    width: 60%;
+    border: 5px solid var(--main-color);
+    border-radius: 10px;
+    margin: auto;
+}
+#About .container .part1 .frame .image {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#About .container .part1 .frame .image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#About .container .part1 .frame .image .layout {
+    /* background-color: yellow; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+#About .container .part1 .frame .image:hover .layout {
+    top: 0%;
+
+}
+#About .container .part1 .frame .image .layout ul {
+    display: flex;
+    list-style: none;
+    column-gap: 15px;
+
+}
+#About .container .part1 .frame .image .layout ul li {
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+#About .container .part1 .frame .image:hover .layout ul li {
+    transition-duration: 1s;
+}
+#About .container .part1 .frame .image:hover .layout ul li:nth-of-type(1) {
+    transition-delay: 1s;
+}
+#About .container .part1 .frame .image:hover .layout ul li:nth-of-type(2) {
+    transition-delay: 1.2s;
+}
+#About .container .part1 .frame .image:hover .layout ul li:nth-of-type(3) {
+    transition-delay: 1.4s;
+}
+#About .container .part1 .frame .image:hover .layout ul li:nth-of-type(4) {
+    transition-delay: 1.6s;
+}
+#About .container .part1 .frame .image .layout ul li i[class*="facebook"] {
+    color: #1877F2;
+}
+#About .container .part1 .frame .image .layout ul li i[class*="instagram"] {
+    color: #E4405F;
+}
+#About .container .part1 .frame .image .layout ul li i[class*="twitter"] {
+    color: #1DA1F2;
+}
+#About .container .part1 .frame .image .layout ul li i[class*="github"] {
+    color: #131418;
+}
+#About .container .part1 .frame .image:hover .layout ul li {
+    opacity: 1;
+    transform: translateY(0px);
+}
+#About .container .part2 {
+    /* padding: 50px 0; */
+    height: auto;
+    width: 50px;
+}
+#About .container .part2 {
+    width: 50%;
+    color: white;
+} 
+#About .container .part2 h2 {
+    font-size: 30px;
+    border-left: 4px solid var(--main-color);
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+#About .container .part2>* {
+    margin-bottom: 15px;
+}
+#About .container .part2 p {
+    color: #c1c1c1;
+    line-height: 1.5;
+}
+#About .container .part2 hr {
+    border: none;
+    border-top: 3px dotted #fff;
+}
+#About .container .part2 .info {
+    display: flex;
+    flex-wrap: wrap;
+}
+#About .container .part2 .info .col {
+    flex-basis: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+#About .container .part2 .buttons button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    transition-duration: .5s;
+}
+#About .container .part2 .buttons button:first-child {
+    margin-right: 10px;
+}
+#About .container .part2 .buttons button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+#Services {
+    color: white;
+}
+#Services .content {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#Services .content .box {
+    width: 25%;
+}
+
+#Services .content .box .item {
+    text-align: center;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-inline: 10px;
+    transition-duration: .5s;
+    transform: translateY(0px);
+}
+#Services .content .box .item:hover {
+    transform: translateY(-15px);
+    box-shadow: rgba(255, 48, 91, 0.4) 0px 5px, rgba(255, 48, 91, 0.3) 0px 10px, rgba(255, 48, 91, 0.2) 0px 15px, rgba(255, 48, 91, 0.1) 0px 20px, rgba(255, 48, 91, 0.05) 0px 25px;
+
+}
+#Services .content .box .item i {
+    font-size: 30px; 
+    color: var(--main-color);
+}
+#Services .content .box .item h5 {
+    font-size: 15px;
+    margin-block: 10px;
+}
+#portfolio .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+#portfolio .content .box {
+    width: 33.33%;
+}
+#portfolio .content .box {
+    margin-bottom: 20px;
+}
+#portfolio .content .box .item {
+    position: relative;
+    margin: 0px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#portfolio .content .box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#portfolio .content .box .layout {
+    background-color: rgba(0,0,0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+#portfolio .content .box .layout::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 0%;
+    background-color:  rgb(255, 48, 91, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition-duration:1s ;
+}
+#portfolio .content .box .item:hover .layout::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+}
+#portfolio .content .box .layout h3 {
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 0px;
+    position: absolute;
+    top: 30px;
+    left: 100%;
+    width: 100%;
+}
+#portfolio .content .box .item:hover .layout h3,
+#portfolio .content .box .item:hover .layout a {
+    transition-duration: 1s;
+    transition-delay: 1s;
+} 
+#portfolio .content .box .item:hover .layout h3 {
+    left: 0%;
+}
+#portfolio .content .box .layout a {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 10px ;
+    text-decoration: none;
+    cursor: pointer;
+}
+#portfolio .content .box .item:hover .layout a {
+    bottom: 30px;
+}
+#Blog .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+#Blog .content .box {
+    width: 33.33%;
+}
+#Blog .content .box .item {
+    color: white;
+    width: 300px;
+    margin: auto;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#Blog .content .box .item .head {
+    height: 170px;
+}
+#Blog .content .box .item .head img,
+#Blog .content .box .item .head iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#Blog .content .box .item .body {
+    padding: 15px;
+}
+#Blog .content .box .item .body >*:not(:last-child) {
+    margin-bottom: 10px;
+}
+#Blog .content .box .item .body h6 {
+    font-size: 14px;
+}
+#Blog .content .box .item .body h4 {
+    font-size: 20px;
+}
+#Blog .content .box .item .body p {
+    color: #c1c1c1;
+    line-height: 1.5;
+
+}
+#Blog .content .box .item .body button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    color: var(--main-color);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+#Blog .content .box .item .body button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+#Blog .content .box .item .body button i {
+    transition-duration: .5s;
+}
+#Blog .content .box .item .body button:hover i {
+    margin-left: 5px;
+}
+#ContactUs form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#ContactUs form .box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#ContactUs form .box:nth-of-type(1),
+#ContactUs form .box:nth-of-type(2) {
+    width: 50%;
+}
+#ContactUs form .box:nth-of-type(1) .item {
+    margin-right: 5px;
+}
+#ContactUs form .box:nth-of-type(2) .item {
+    margin-left: 5px;
+}
+#ContactUs form .box .item input,
+#ContactUs form .box .item textarea {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+}
+#ContactUs form .box .item textarea {
+    resize: none;
+    height: 150px;
+}
+#ContactUs form .box .item input::placeholder,
+#ContactUs form .box .item textarea::placeholder {
+    color: white;
+}
+#ContactUs form  button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    color: var(--main-color);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+#ContactUs form  button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+footer {
+    background-color: var(--second-color);
+    text-align: center;
+    color: white;
+    padding: 10px 0 ;
+}
