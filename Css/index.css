@@ -311,28 +311,28 @@ header a.shape::after {
     font-size: 15px;
     margin-block: 10px;
 }
-#portfolio .content {
+#Portfolio .content {
     display: flex;
     flex-wrap: wrap;
 }
-#portfolio .content .box {
+#Portfolio .content .box {
     width: 33.33%;
 }
-#portfolio .content .box {
+#Portfolio .content .box {
     margin-bottom: 20px;
 }
-#portfolio .content .box .item {
+#Portfolio .content .box .item {
     position: relative;
     margin: 0px 10px;
     border-radius: 10px;
     overflow: hidden;
 }
-#portfolio .content .box img {
+#Portfolio .content .box img {
     width: 100%;
     height: 100%;
     display: block;
 }
-#portfolio .content .box .layout {
+#Portfolio .content .box .layout {
     background-color: rgba(0,0,0, .5);
     position: absolute;
     top: 0;
@@ -341,7 +341,7 @@ header a.shape::after {
     height: 100%;
 
 }
-#portfolio .content .box .layout::before {
+#Portfolio .content .box .layout::before {
     content: "";
     display: block;
     width: 0%;
@@ -354,12 +354,12 @@ header a.shape::after {
     border-radius: 50%;
     transition-duration:1s ;
 }
-#portfolio .content .box .item:hover .layout::before {
+#Portfolio .content .box .item:hover .layout::before {
     width: 100%;
     height: 100%;
     border-radius: 0%;
 }
-#portfolio .content .box .layout h3 {
+#Portfolio .content .box .layout h3 {
     text-align: center;
     background-color: var(--main-color);
     color: white;
@@ -369,15 +369,15 @@ header a.shape::after {
     left: 100%;
     width: 100%;
 }
-#portfolio .content .box .item:hover .layout h3,
-#portfolio .content .box .item:hover .layout a {
+#Portfolio .content .box .item:hover .layout h3,
+#Portfolio .content .box .item:hover .layout a {
     transition-duration: 1s;
     transition-delay: 1s;
 } 
-#portfolio .content .box .item:hover .layout h3 {
+#Portfolio .content .box .item:hover .layout h3 {
     left: 0%;
 }
-#portfolio .content .box .layout a {
+#Portfolio .content .box .layout a {
     position: absolute;
     bottom: -100px;
     left: 50%;
@@ -389,7 +389,7 @@ header a.shape::after {
     text-decoration: none;
     cursor: pointer;
 }
-#portfolio .content .box .item:hover .layout a {
+#Portfolio .content .box .item:hover .layout a {
     bottom: 30px;
 }
 #Blog .content {
