@@ -68,10 +68,10 @@
     #Services .content .box:not(:last-child) {
         margin-bottom: 30px;
     }
-    #portfolio .content .box {
+    #Portfolio .content .box {
     width: 100%;
 }
-    #portfolio .content .box .item {
+    #Portfolio .content .box .item {
      font-size: 12px;
 }
 #Blog .content .box {
@@ -133,7 +133,7 @@ header .content p {
     #Services .content .box .item {
         padding: 20px;
     }
-    #portfolio .content .box {
+    #Portfolio .content .box {
         width: 50%;
     }
     #Blog .content .box {
@@ -181,7 +181,7 @@ header .content p {
       #Services .content .box .item {
         width: 100%;
       }
-      #portfolio .content .box {
+      #Portfolio .content .box {
         width: 33.33%;
      }
        #Blog .content .box {
