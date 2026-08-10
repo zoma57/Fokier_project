@@ -60,7 +60,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/slider-01-cd8154e4.jpg);
+    background-image: url("../images/slider-01-8afc6963.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -80,19 +80,16 @@ header .content {
     position: relative;
 }
 header .content h4 {
-    /* font-size: 30px; */
     font-size: clamp(1rem, 3vw, 2rem);
 }
 header .content h1 {
-    /* font-size: 80px; */
     font-size: clamp(3rem ,6vw ,5rem);
     margin: 20px 0px;
     color: var(--main-color);
+    text-shadow: 10px 5px 40px var(--main-color);
 }
 header .content p {
-    /* font-size: 20px; */
     font-size: clamp(.8rem ,2vw ,1.5rem);
-
 }
 header .content p::after {
     content: "Designer";
@@ -123,11 +120,12 @@ header a.shape::after {
     position: absolute;
     top: -25%;
     left: 50%;
-     transform: translate(-50%);
-     animation-name: animate_1;
-     animation-duration: 1.5s;
-     animation-timing-function: linear;
-     animation-iteration-count: infinite;
+    transform: translate(-50% , -50%);
+    animation-name: animate_1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 15px 5px #ff305b50;
 
 }
 #About {
@@ -261,19 +259,22 @@ header a.shape::after {
     align-items: center;
     column-gap: 5px;
 }
-#About .container .part2 .buttons button {
-    padding: 15px 25px;
+#About .container .part2 .buttons a {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 15px 0;
     border-radius: 5px;
     background-color: transparent;
     color: var(--main-color);
     border: 1px solid var(--main-color);
     cursor: pointer;
     transition-duration: .5s;
+    text-decoration: none;
 }
-#About .container .part2 .buttons button:first-child {
+#About .container .part2 .buttons a:first-child {
     margin-right: 10px;
 }
-#About .container .part2 .buttons button:hover {
+#About .container .part2 .buttons a:hover {
     background-color: var(--main-color);
     color: white;
 }
@@ -293,7 +294,7 @@ header a.shape::after {
     text-align: center;
     border: 1px solid var(--main-color);
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin-inline: 10px;
     transition-duration: .5s;
     transform: translateY(0px);
@@ -333,13 +334,11 @@ header a.shape::after {
     display: block;
 }
 #Portfolio .content .box .layout {
-    background-color: rgba(0,0,0, .5);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
 }
 #Portfolio .content .box .layout::before {
     content: "";
@@ -479,6 +478,11 @@ header a.shape::after {
     background-color: transparent;
     padding: 10px;
     border-radius: 5px;
+    color: white;
+}
+#ContactUs form .box .item input:focus,
+#ContactUs form .box .item textarea:focus {
+    outline: none;
 }
 #ContactUs form .box .item textarea {
     resize: none;

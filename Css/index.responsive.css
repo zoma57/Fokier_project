@@ -64,6 +64,7 @@
     }
     #Services .content .box .item {
         padding: 20px;
+        max-width: 280px;
     }
     #Services .content .box:not(:last-child) {
         margin-bottom: 30px;
@@ -98,22 +99,14 @@
         padding: 10px 0;
         font-size: 12px;
     }
-
+}
 @media (min-width: 371px) and (max-width: 1300px) {
-    /* header .content h4 {
-    font-size: 25px;
-}
-header .content h1 {
-    font-size: 80px;
-}
-header .content p {
-    font-size: 20px;
-} */
   nav .container .logo {
         width: 16%;
     }
+    
     #Services .content .box .item {
-        width: 280px;
+        width: 100%;
         margin: auto;
         padding: 20px;
     }
@@ -128,7 +121,6 @@ header .content p {
     }
     #Services .content .box {
         width: 50%;
-        /* padding: 15px; */
     }
     #Services .content .box .item {
         padding: 20px;
@@ -139,6 +131,14 @@ header .content p {
     #Blog .content .box {
     width: 50%;
 }
+#Blog .content .box .item {
+    width: 95%;
+    max-width: 280px;
+    height: 100%;
+}
+#Blog .content .box .item .body h4 {
+    font-size: 15px;
+}
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
@@ -147,7 +147,6 @@ header .content p {
     }
     #About .container .part {
         width: 50%;
-        /* padding: 0px 80px; */
     }
     #About .container .part2 .info .col h5 {
         font-size: 12px;
@@ -159,6 +158,9 @@ header .content p {
         width: 280px;
         margin: auto;
      }
+     #Blog .content .box .item .body h4 {
+    font-size: 20px;
+}
      #ContactUs form .box:nth-of-type(1),
     #ContactUs form .box:nth-of-type(2) {
     width: 50%;
@@ -168,6 +170,7 @@ header .content p {
     }
     #ContactUs form .box:nth-of-type(2) .item {
     margin-left: 5px;
+}
 }
      
 
@@ -187,10 +190,12 @@ header .content p {
        #Blog .content .box {
         width: 33.33%;
     }
+    #Blog .content .box .item {
+        height: auto;
 }
 }
+
 
 @media (min-width: 1181px) and (max-width: 1300px) {
 
-}
 }
