@@ -15,7 +15,7 @@ nav .container {
     align-items: center;
 }
 nav .container .logo {
-   width: 6%;
+    width: 6%;
 }
 nav .container .logo img {
     width: 100%;
@@ -60,7 +60,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/slider-01-cd8154e4");
+    background-image: url("../images/slider-01-8afc6963.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
